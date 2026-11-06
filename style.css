@@ -1,0 +1,914 @@
+        
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #11161c;
+        color: #f5f7fa;
+        line-height: 1.6;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    /* NAVIGATION */
+
+    header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background:  #11161c;
+        border-bottom: 1px solid #252525;
+    }
+
+    nav {
+        max-width: 1150px;
+        margin: auto;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25px;
+    }
+
+    .logo {
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: 5px;
+    }
+    
+
+    .logo span {
+        color: #888;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #888;
+    }
+
+
+    /*  HERO  */
+
+    .hero {
+        min-height: 700px;
+        max-width: 1150px;
+        margin: auto;
+        padding: 150px 25px 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        
+        
+
+    }
+
+    .hero-text {
+        flex: 1;
+    }
+
+    .small-title {
+        color: #aaa;
+        font-size: 14px;
+        margin-bottom: 12px;
+        letter-spacing: 3px;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+        line-height: 1.05;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+        color: #aaa;
+    }
+
+    .hero p {
+        color: #bbb;
+        font-size: 15px;
+        max-width: 500px;
+        line-height: 1.8;
+    }
+
+    /*  QUANTITIES */
+
+    .qualities {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 80px 8%;
+        background:  #11161c;
+        color: white;
+    }
+
+    .quality {
+        padding: 30px;
+        border: 1px solid #444;
+        transition: 0.3s;
+    }
+
+    .quality:hover {
+        transform: translateY(-10px);
+        border-color: white;
+    }
+
+    .quality h3 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .quality p {
+        color: #bbb;
+        line-height: 1.7;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 13px 27px;
+        border: 1px solid #fff;
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #fff;
+        color: #000;    
+    }
+
+
+    /*   PROFILE IMAGE   */
+    
+    .hero-image {
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        border: 3px solid #222;
+        background: #181818;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.15),
+                    0 0 50px rgba(255, 255, 255, 0.08);
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+           
+    }
+
+
+    /*   ABOUT   */
+
+    .about {
+        max-width: 1050px;
+        margin: auto;
+        padding: 80px 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: center;
+    }
+
+    .about-image {
+        height: 430px;
+        background: #151515;
+        border: 1px solid #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .section-label {
+        color: #aaa;
+        font-size: 13px;
+        letter-spacing: 3px;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+    }
+
+    .about h2 {
+        font-size: 38px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+
+    .about h2 span {
+        color: #aaa;
+    }
+
+    .about p {
+        color: #aaa;
+        line-height: 1.9;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .res{
+        background-color:  #11161c;
+        color: black;
+        width: 151px;
+        height: 48px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 20px;
+        font-size: 14px;
+        border-color: white;
+        
+    }
+
+    .res a{
+        background-color:  #11161c;
+        padding: 15px 44px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .res :hover{
+        background-color: white;
+        color: black;
+      
+    }
+
+
+    /*   DETAILS  */
+
+    .details {
+        border: 1px solid white;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .detail strong {
+        display: block;
+        font-size: 12px;
+        color: #fff;
+        margin-bottom: 4px;
+    }
+
+    .detail span {
+        color: #aaa;
+        font-size: 12px;
+    }
+
+
+    /*   HOBBIES   */
+
+    .hobbies {
+        max-width: 1050px;
+        margin: auto;
+        padding: 80px 25px;
+    }
+
+    .center-title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .center-title h2 {
+        font-size: 38px;
+    }
+
+    .hobby-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .hobby {
+        padding: 40px 20px;
+        text-align: center;
+        background: #111;
+        border: 1px solid #292929;
+        transition: 0.3s;
+    }
+
+    .hobby:hover {
+        transform: translateY(-5px);
+        border-color: #777;
+    }
+
+    .hobby .icon {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .hobby h3 {
+        font-size: 17px;
+        
+    }
+
+    /*  HOBBIES & SKILLS   */
+
+.hobbies-skills {
+    max-width: 1150px;
+    margin: auto;
+    padding: 100px 25px;
+}
+
+.center-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.center-title h2 {
+    font-size: 42px;
+}
+
+.center-title h2 span {
+    color: #888;
+}
+
+
+/* MAIN TWO-COLUMN LAYOUT */
+
+.hobbies-skills-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+}
+
+
+/* BOXES */
+
+.hobbies-box,
+.skills-box {
+    background: #111;
+    border: 1px solid #292929;
+    padding: 30px;
+    transition: 0.4s ease;
+}
+
+.hobbies-box:hover,
+.skills-box:hover {
+    border-color: #666;
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.05);
+}
+
+
+/* BOX TITLE */
+
+.box-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #333;
+}
+
+
+/*   HOBBIES  */
+
+
+
+.hobby .icon {
+    font-size: 30px;
+    margin: 12px 0 8px;
+}
+
+.hobby h3 {
+    font-size: 16px;
+}
+
+
+/* HOBBY IMAGE SLIDER */
+
+.slider {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 9s infinite;
+}
+
+.slides img {
+    width: 33.333%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*  SKILLS  */
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px;
+    background: #11161c;
+    border: 1px solid #292929;
+    transition: 0.4s ease;
+}
+
+.skill-card:hover {
+    transform: translateX(8px);
+    border-color: #777;
+    box-shadow: 0 10px 25px rgba(255,255,255,0.06);
+}
+
+
+/* SKILL ICON */
+
+.skill-icon {
+    min-width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #444;
+    border-radius: 50%;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+
+    background: #11161c;
+}
+
+
+
+/* SKILL TEXT */
+
+.skill-info {
+    width: 100%;
+}
+
+.skill-info h3 {
+    font-size: 18px;
+    margin-bottom: 3px;
+    
+    
+}
+
+.css{
+    text-decoration: none;
+}
+
+.skill-info p {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 10px;
+    
+}
+
+.box-title{
+    text-align: center;
+    font-size: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* SKILL BAR */
+
+.skill-bar {
+    width: 100%;
+    height: 5px;
+    background: #333;
+    overflow: hidden;
+}
+
+.skill-bar span {
+    display: block;
+    height: 100%;
+    background: #fff;
+    transition: 1s ease;
+}
+
+
+/*    RESPONSIVE   */
+
+@media (max-width: 900px) {
+
+    .hobbies-skills-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hobbies-skills {
+        padding: 70px 20px;
+    }
+
+    .center-title h2 {
+        font-size: 32px;
+    }
+
+    .hobbies-box,
+    .skills-box {
+        padding: 20px;
+    }
+
+    .hobby-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slider {
+        height: 200px;
+    }
+
+}
+
+    
+
+    /*   CONTACT    */
+
+    .contact {
+        max-width: 850px;
+        margin: auto;
+        padding: 90px 25px;
+        text-align: center;
+        border-top: 1px solid #252525;
+    }
+
+    .contact h2 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .contact > p {
+        color: #aaa;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+
+    /*    CONTACT FORM   */
+
+    .contact-form {
+        width: 100%;
+        text-align: left;
+        background: #111;
+        border: 1px solid #292929;
+        padding: 35px;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+
+        font-size: 12px;
+        letter-spacing: 1px;
+
+        margin-bottom: 8px;
+
+        color: #ddd;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 14px;
+        background: #050505;
+        border: 1px solid #333;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        font-size: 13px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        border-color: #fff;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+        color: #555;
+    }
+
+
+    /*  SEND BUTTON   */
+
+    .send-btn {
+        padding: 14px 30px;
+        background: #fff;
+        color: #000;
+        border: 1px solid #fff;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .send-btn:hover {
+        background: #555;
+        color: #fff;
+    }
+
+
+    /*   PHONE   */
+
+    .contact-info {
+        margin-top: 30px;
+    }
+
+    .phone {
+        font-size: 18px;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+    .phone i {
+        margin-right: 8px;
+        color: #aaa;
+    }
+
+
+    /*   SOCIAL MEDIA    */
+
+    .social-section {
+        text-align: center;
+        padding: 40px 20px;
+        border-top: 1px solid #252525;
+    }
+
+    .social-section h3 {
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #aaa;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-icons a {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #111;
+        border: 1px solid #333;
+        border-radius: 50%;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+        background: #fff;
+        color: #000;
+        transform: translateY(-5px);
+    }
+
+
+    /*   FOOTER   */
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        border-top: 1px solid #252525;
+        color: #666;
+        font-size: 12px;
+    }
+
+    /*   IMAGE SLIDER    */
+
+    .slider {
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 12px;
+        margin-bottom: 25px;
+    }
+
+    .slides {
+        display: flex;
+        width: 300%;
+        height: 100%;
+        animation: slide 9s infinite;
+    }
+
+    .slides img {
+        width: 33.333%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* SLIDE ANIMATION */
+    @keyframes slide {
+
+        0% {
+            transform: translateX(0);
+        }
+
+        30% {
+            transform: translateX(0);
+        }
+
+        35% {
+            transform: translateX(-33.333%);
+        }
+
+        65% {
+            transform: translateX(-33.333%);
+        }
+
+        70% {
+            transform: translateX(-66.666%);
+        }
+
+        95% {
+            transform: translateX(-66.666%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+
+    /*   RESPONSIVE DESIGN    */
+
+    @media (max-width: 768px) {
+
+        nav {
+            height: 65px;
+            padding: 0 18px;
+        }
+
+        .logo {
+            font-size: 18px;
+        }
+
+        nav ul {
+            gap: 15px;
+        }
+
+        nav ul li a {
+            font-size: 11px;
+        }
+
+
+        /*   HERO   */
+
+        .hero {
+            min-height: auto;
+
+            padding: 120px 25px 60px;
+
+            flex-direction: column;
+
+            text-align: center;
+        }
+
+        .hero-text {
+            order: 2;
+        }
+
+        .hero-image {
+            order: 1;
+
+            width: 270px;
+            height: 270px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+        }
+
+        .hero p {
+            font-size: 13px;
+            margin: auto;
+        }
+
+
+        /*   CARDS    */
+
+        .cards {
+            grid-template-columns: 1fr;
+
+            margin: 0 auto 60px;
+        }
+
+
+        /*    ABOUT    */
+
+        .about {
+            grid-template-columns: 1fr;
+
+            gap: 40px;
+
+            padding: 60px 25px;
+        }
+
+        .about-image {
+            height: 350px;
+        }
+
+        .about h2 {
+            font-size: 30px;
+        }
+
+
+        /*    HOBBIES    */
+
+        .hobbies {
+            padding: 60px 25px;
+        }
+
+        .hobby-grid {
+            grid-template-columns: 1fr;
+        }
+
+
+        /*    CONTACT    */
+
+        .contact {
+            padding: 60px 20px;
+        }
+
+        .contact h2 {
+            font-size: 32px;
+        }
+
+        .contact-form {
+            padding: 25px;
+        }
+
+        .form-row {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+
+
+        /*     SOCIAL     */
+
+        .social-icons {
+            gap: 10px;
+        }
+    }
